@@ -27,7 +27,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
             InlineKeyboardButton(text="Commands ❓", callback_data="bot_commands"),
             InlineKeyboardButton(
                 text="Source Code 🛠",
-                url="https://github.com/yasirarism/MissKatyPyro",
+                url="https://rb.gy/pha7jy",
             ),
         ],
         [
@@ -35,7 +35,7 @@ home_keyboard_pm = InlineKeyboardMarkup(
                 text="System Stats 🖥",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Dev 👨", url="https://t.me/YasirArisM"),
+            InlineKeyboardButton(text="Dev 👨", url="https://t.me/Seiryuu19"),
         ],
         [
             InlineKeyboardButton(
@@ -54,7 +54,7 @@ keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton(text="Help ❓", url=f"t.me/{BOT_USERNAME}?start=help"),
             InlineKeyboardButton(
                 text="Source Code �",
-                url="https://github.com/yasirarism/MissKatyPyro",
+                url="https://rb.gy/pha7jy",
             ),
         ],
         [
@@ -62,7 +62,7 @@ keyboard = InlineKeyboardMarkup(
                 text="System Stats 💻",
                 callback_data="stats_callback",
             ),
-            InlineKeyboardButton(text="Dev 👨", url="https://t.me/YasirArisM"),
+            InlineKeyboardButton(text="Dev 👨", url="https://t.me/Seiryuu19"),
         ],
     ]
 )
@@ -90,7 +90,7 @@ async def start(_, ctx: Message, strings):
         nama = ctx.from_user.mention if ctx.from_user else ctx.sender_chat.title
         try:
             return await ctx.reply_photo(
-                photo="https://img.yasirweb.eu.org/file/90e9a448bc2f8b055b762.jpg",
+                photo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgY-jp10BCplRoSFYBaz5AeTBxJZFfd5rDiRwkVniLW2HxIqQN80K7tyI&s=10",
                 caption=strings("start_msg").format(kamuh=nama),
                 reply_markup=keyboard,
             )
@@ -206,7 +206,7 @@ You can choose an option below, by clicking a button.
 If you want give coffee to my owner you can send /donate command for more info.
 """.format(
             first_name=name,
-            bot_name="MissKaty",
+            bot_name="Nahida",
         ),
         keyb,
     )
